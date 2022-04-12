@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+
+body{
+    background-color: #041C32;
+    text-align: center;
+}
+
+/* heading */
+.heading{
+    color: #B8FFF9;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+h1{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* buttons */
+.container{
+    width: 100%;
+}
+.button{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 3% 5%;
+}
+
+/* btn color */
+.red{
+    background-color: #630606;
+}
+.blue{
+    background-color: #4D77FF;
+}
+.green{
+    background-color: #97DBAE;
+}
+.bhagwa{
+    background-color: #F76E11;
+}
+.flash{
+    background-color: #041C32;
+}
