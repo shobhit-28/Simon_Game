@@ -58,5 +58,21 @@ function patternMatcher(indexValue) {
         }
         else {
             $("h1").text("Wrong!");
+            flashOnWrong();
         }
 }
+
+function flashOnWrong(){
+    $("body").addClass("wrong-body");
+    setTimeout(function(){
+        $("body").removeClass("wrong-body");
+    }, 200);
+    $("h1").addClass("wrong-text");
+    setTimeout(function(){
+        $("h1").removeClass("wrong-text");
+    }, 200);
+}
+
+// function startOver(){
+//     var gamePattern = [];
+// }

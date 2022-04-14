@@ -4,6 +4,12 @@ body{
     background-color: #041C32;
     text-align: center;
 }
+.wrong-body{
+    background-color: #FD5D5D;
+}
+.wrong-text{
+    color: #041C32;
+}
 
 /* heading */
 .heading{
