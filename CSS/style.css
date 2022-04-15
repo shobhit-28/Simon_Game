@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Fontdiner+Swanky&display=swap');
 
 body{
     background-color: #041C32;
@@ -38,16 +38,40 @@ h1{
 /* btn color */
 .red{
     background-color: #630606;
+    opacity: 95%;
 }
 .blue{
     background-color: #4D77FF;
+    opacity: 95%;
 }
 .green{
     background-color: #006778;
+    opacity: 95%;
 }
 .bhagwa{
     background-color: #F76E11;
+    opacity: 95%;
 }
 .flash{
     background-color: #041C32;
+}
+
+/* respnsive */
+@media (max-width: 991px){
+    .button{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 7%;
+        display: block;
+        margin-left: 45%;
+    }
+}
+
+/* footer */
+footer{
+    color: #5584AC;
+    font-family: 'Beau Rivage', cursive;
+}
+footer:hover{
+    color: #95D1CC;
 }
