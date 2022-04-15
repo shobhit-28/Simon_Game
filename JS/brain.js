@@ -58,7 +58,25 @@ function patternMatcher(indexValue) {
         }
         else {
             $("h1").text("Wrong!");
+            setTimeout(function(){
+                $("h1").text("Restarting");
+                // $(".button").off("click", function () {
+                //     userChosenColor = $(this).attr('id');
+                //     userClickedPattern.push(userChosenColor);
+                //     divFlash(userChosenColor);
+                //     playSound(userChosenColor);
+                //     setTimeout(function(){
+                //         patternMatcher(userClickedPattern.length-1);
+                //     }, 1000);
+                //     $("h1").text("Level " + gameLvl);
+                // })
+            },1000);
             flashOnWrong();
+            startOver();
+            setTimeout(function(){
+                nextSequence();
+                $("h1").text("Level " + gameLvl);
+            }, 2300);
         }
 }
 
@@ -71,8 +89,12 @@ function flashOnWrong(){
     setTimeout(function(){
         $("h1").removeClass("wrong-text");
     }, 200);
+    var sound = new Audio("sounds/wrong.mp3");
+    sound.play();
 }
 
-// function startOver(){
-//     var gamePattern = [];
-// }
+function startOver(){
+    gamePattern = [];
+    userClickedPattern = [];
+    gameLvl = 1;
+}
