@@ -13,26 +13,7 @@ function nextSequence() {
     playSound(randomChosenColour);
 }
 
-document.querySelector("h1").addEventListener("click", function () {
-    ++keyPressCounter;
-    if (keyPressCounter == 1) {
-        nextSequence();
-        ++gameLvl;
-        for (let i = 0; i < document.querySelectorAll(".button").length; i++) {
-            document.querySelectorAll(".button")[i].addEventListener("click", function () {
-                userChosenColor = $(this).attr('id');
-                userClickedPattern.push(userChosenColor);
-                divFlash(userChosenColor);
-                playSound(userChosenColor);
-                setTimeout(function () {
-                    patternMatcher(userClickedPattern.length - 1);
-                }, 1000);
-                $("h1").text("Level " + gameLvl);
-            })
-        }
-        $("h1").text("Level " + gameLvl);
-    }
-})
+
 
 $(document).keypress(function () {
     ++keyPressCounter;
